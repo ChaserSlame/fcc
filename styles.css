@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(216, 228, 238);
+    max-width: 1360px;
+    margin: 0 auto;
+}
+
+.menuContenedor{
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.izquierda img{    
+    width: 150px;
+}
+.derecha{
+    background-color: bisque;
+}
+
+li{
+    display: inline-block;
+}
