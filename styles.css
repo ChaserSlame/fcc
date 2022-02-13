@@ -1,17 +1,17 @@
 body{
-    background-color: rgb(216, 228, 237);
+    background-color: rgb(216, 228, 238);
     max-width: 1360px;
     margin: 0 auto;
 }
 
 .menuContenedor{
-    background-color: orange;
+    background-color: blue;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 .izquierda img{    
-    width: 149px;
+    width: 150px;
 }
 .derecha{
     background-color: bisque;
