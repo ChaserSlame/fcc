@@ -2,21 +2,60 @@ body{
     background-color: rgb(216, 228, 238);
     max-width: 1360px;
     margin: 0 auto;
+    font-family: 'Poppins';
+}
+.hamburguesa{
+    display: none;
 }
 
 .menuContenedor{
-    background-color: blue;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.izquierda img{    
-    width: 150px;
-}
-.derecha{
-    background-color: bisque;
+    padding: 20px;
 }
 
 li{
     display: inline-block;
+    padding: 0px 10px 0px 10px;
+}
+
+@media screen and (max-width:700px){
+
+    .derecha{
+        visibility: hidden;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        position: absolute;
+        background-color: red;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.7;
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    li{
+        display: block;
+        padding:10px;
+        text-align: center;
+    }
+
+    .hamburguesa{
+        display: flex;
+        z-index: 1;
+        flex-direction: column-reverse;
+        
+    }
+    .hamburguesa div{
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
 }
