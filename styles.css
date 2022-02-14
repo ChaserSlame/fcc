@@ -8,6 +8,10 @@ body{
     display: none;
 }
 
+ul{
+    padding: 0px;
+}
+
 .menuContenedor{
     position:sticky;
     top: 0;
@@ -74,7 +78,7 @@ section p{
     .derecha{
         visibility: hidden;
         left: 0;
-        bottom: -100vh;
+        bottom: -90vh;
         top: 0;
         position: absolute;
         background-color: rgb(255, 0, 0);
