@@ -8,26 +8,35 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <!--Script principal-->
+    <script src="main.js"></script>
 
+    <!--Menu-->
     <div class="menuContenedor">        
         <div class="izquierda">
             <img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Samsung_wordmark.svg" alt="" width="150px">
         </div>
 
-        <div class="hamburguesa">
+        <div class="hamburguesa" onclick="mostrarMenu()">
             <div></div><div></div><div></div>
         </div>
         
         <div class="derecha">
             <ul>
-                <li>Hola</li>
-                <li>Compadre</li>
-                <li>Marico</li>
-                <li>Luis!</li>
+                <li><a href="#primero" onclick="mostrarMenuClickLink()">Inicio</a></li>
+                <li><a href="#segundo" onclick="mostrarMenuClickLink()">Tienda</a></li>
+                <li><a href="#tercero" onclick="mostrarMenuClickLink()">Repuestos</a></li>
+                <li><a href="#" onclick="alert('Tenes para anotar? 911 Llamanos 👋')">Contacto</a></li>
             </ul>
         </div>
     </div>
 
+    <!--Contenido Principal-->
+    <section>
+        <p id="primero"><strong>Inicio 👋</strong>ipsum dolor sit amet consectetur, adipisicing elit. Ut repellendus quia blanditiis voluptas minus repellat nam assumenda, ipsam laboriosam illo.</p>
+        <p id="segundo"><strong>Tienda 🛒</strong>ipsum dolor sit amet consectetur, adipisicing elit. Ut repellendus quia blanditiis voluptas minus repellat nam assumenda, ipsam laboriosam illo.</p>
+        <p id="tercero"><strong>Repuestos 🔨</strong>ipsum dolor sit amet consectetur, adipisicing elit. Ut repellendus quia blanditiis voluptas minus repellat nam assumenda, ipsam laboriosam illo.</p>
+    </section>
+
 </body>
 </html>
-<!-- This is some quality stuff right here -->
